@@ -13,10 +13,10 @@
 #
 ---
 include:
-  - board: seeeduino_xiao_ble
+  - board: seeeduino_xiao_ble nice_view_adapter nice_view
     shield: chipper_left
   - board: seeeduino_xiao_ble
-    shield: chipper_right
+    shield: chipper_right nice_view_adapter nice_view
 
 #  - board: seeeduino_xiao_ble
 #    shield: chippercirth_left nice_view_adapter nice_view
