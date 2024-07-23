@@ -89,7 +89,7 @@
         Control {
             label = "Control";
             bindings = <
-&bootloader  &sys_reset  &trans  &trans   &trans  &trans    &trans     &trans  &trans  &trans  &trans  &trans
+&bootloader  &sys_reset  &trans  &trans   &trans  &trans    &trans     &trans  &trans  &trans  &trans  &tog 5
 &bt BT_CLR   &trans      &trans  &trans   &trans  &sl 4     &trans     &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans        &trans  &trans    &trans         &trans  &trans  &trans  &trans  &trans
                         &trans  &trans &trans    &trans  &trans &trans
@@ -105,6 +105,28 @@
               &trans   &trans  &trans           &trans    &trans   &trans
             >;
         };
+
+        StarCraft {
+          label = "StarCraft";
+          bindings = <
+  &kp ESC        &kp M        &kp W      &kp E  &kp R      &kp T      &kp Y  &kp 1 &kp 2 &kp 3 &kp P            &kp BSPC
+  &mt LCTRL TAB  &kp A        &kp S      &kp D  &kp F      &kp G      &kp H  &kp 4 &kp 5 &kp 6 &kp SEMI         &kp RET
+  &kp LSHFT      &mt LSHFT Z  &kp X      &kp C  &kp V      &lt 4 B    &kp N  &kp 7 &kp 8 &kp 9 &mt RSHIFT SLASH &kp RSHIFT
+                          &kp LALT  &mo 6  &mt LGUI SPACE   &kp SPACE  &mo 6   &lt 4 LBKT
+            >;
+        };
+        StarCraftFn {
+          label = "StarCraftFn";
+          bindings = <
+  &kp ESC        &kp 0  &kp 1  &kp 2  &kp 3  &kp 4   &kp Y  &kp 1 &kp 2 &kp 3 &kp P            &tog 5
+  &mt LCTRL TAB  &kp 5  &kp 6  &kp 7  &kp 8  &kp 9   &kp H  &kp 4 &kp 5 &kp 6 &kp SEMI         &kp RET
+  &kp LSHFT      &kp F7 &kp F6 &kp F5 &kp F2 &kp F1  &kp N  &kp 7 &kp 8 &kp 9 &mt RSHIFT SLASH &kp RSHIFT
+                          &kp LALT  &mo 6  &mt LGUI SPACE   &kp SPACE  &mo 6   &lt 4 LBKT
+            >;
+        };
+
+
+
     };
 };
 
