@@ -30,7 +30,9 @@
         };
     };
 
-
+    &mt {
+      flavor = "tap-unless-interrupted";
+    };
 
     macros {
     };
