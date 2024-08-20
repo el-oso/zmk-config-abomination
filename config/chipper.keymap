@@ -11,6 +11,10 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
 
+&mt {
+   flavor = "tap-unless-interrupted";
+};
+
 / {
 
     behaviors {
@@ -30,9 +34,6 @@
         };
     };
 
-    &mt {
-      flavor = "tap-unless-interrupted";
-    };
 
     macros {
     };
